@@ -56,8 +56,11 @@
 }
 
 .homepage-render{
+  display: flex;
+  justify-content: center;
   background-color: blue;
   height: 1000px;
+  font-size: 3em;
 }
 
 .search-render{
