@@ -5,7 +5,6 @@ export default class Header extends Component {
     render() {
         return (
             <div>
-                
                 <header className='anchor-tags'>
                     <h1>POKEDEX</h1>
                     <NavLink exact className='tag' activeClassName='selected' to='/'>Home</NavLink>

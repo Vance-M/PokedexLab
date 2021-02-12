@@ -68,9 +68,12 @@
 }
 
 .sidebar {
+  display: flex;
+  justify-content: center;
   border-right: 2px yellow solid;
   background-color: blue;
   color: yellow;
+
 }
 
 .search-results {
@@ -81,6 +84,11 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
   color: yellow;
   background-color: blue;
+}
+
+.sort-by {
+  display: flex;
+  flex-direction: column;
 }
 
 .pokemon {
@@ -98,4 +106,10 @@
 .poke-image {
   height: 50px;
   width: 50px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
