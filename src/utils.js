@@ -23,7 +23,7 @@ class PokeItem extends Component {
 
 export default class PokeList extends Component {
     render() {
-        const pokemonCard = this.props.cards.map(pokemonCard => <PokeItem pokemonCard={pokemonCard} key={pokemonCard.pokebase} />)
+        const pokemonCard = this.props.cards.map(pokemonCard => <PokeItem pokemonCard={pokemonCard} key={pokemonCard._id} />)
         return (
             <ul className='search-results'>
                 { pokemonCard }
