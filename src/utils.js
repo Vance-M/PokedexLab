@@ -1,11 +1,13 @@
-
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 class PokeItem extends Component {
     render() {
         return (
             <li className='pokemon' key={this.props.pokemonCard._id}>
+                <Link to={this.props.pokemonCard.pokemon}>
                 <p><img src={this.props.pokemonCard.url_image} alt = {this.props.pokemonCard.pokemon} className= 'poke-image'/></p>
+                </Link>
                 <p>Name:{this.props.pokemonCard.pokemon}</p>
                 <p>Pokedex Number:<br></br>{this.props.pokemonCard.species_id}</p>
                 <div className='stats'>
@@ -17,6 +19,7 @@ class PokeItem extends Component {
                     <p>Spd:{this.props.pokemonCard.speed}</p>
                 </div>
             </li>
+
         )
     }
 }

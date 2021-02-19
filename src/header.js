@@ -8,7 +8,7 @@ export default class Header extends Component {
                 <header className='anchor-tags'>
                     <h1>POKEDEX</h1>
                     <NavLink exact className='tag' activeClassName='selected' to='/'>Home</NavLink>
-                    <NavLink exact className='tag' activeClassName='selected' to='/search'>Search</NavLink>
+                    <NavLink exact className='tag' activeClassName='selected' to='/pokemon'>Search</NavLink>
                     <a href='https://www.serebii.net/' className='tag'>Serebii</a>
                 </header>
             </div>
