@@ -74,17 +74,17 @@ body {
 
 .sidebar {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   color: yellow;
   border: 2px yellow solid;
-  margin: 5%;
+  padding: 12%;
 }
 
 .search-results {
   display: grid;
   grid-column:auto;
   grid-row: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   color: yellow;
 }
@@ -116,4 +116,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+}
+
+.pokedexEntry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: yellow;
 }

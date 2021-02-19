@@ -6,7 +6,7 @@ export default class HomePage extends Component {
         return (
             <div className='homepage-render'>
                 
-                <NavLink exact className='tag' activeClassName='selected' to='/search'>Search for Pokemon</NavLink>
+                <NavLink exact className='tag' activeClassName='selected' to='/pokemon'>Search for Pokemon</NavLink>
             </div>
         )
     }
